@@ -1,6 +1,6 @@
 import Layout from "../components/Layout/Layout";
 import SliderOne from "../components/Sections/Slider/SliderOne";
-import sliderData from "../data/slider/sliderFive.json";
+import sliderData from "../data/slider/sliderData.json";
 import CategoriesTwo from "../components/Sections/Categories/CategoriesTwo";
 import categoriesTwodata from "../data/categories/categoryTwo.json";
 import IntroductionOne from "../components/Sections/Introduction/IntroductionOne";
@@ -20,8 +20,8 @@ export default function homepage() {
       <CategoriesTwo data={categoriesTwodata} />
       <IntroductionOne data={introductionOneData} />
       <IntroductionTwo data={introductionTwoData} />
-      <TestimonialOne data={testimonialOneData} />
       <TeamOne data={teamOneData} />
+      <TestimonialOne data={testimonialOneData} />
       <CTAOne />
     </Layout>
   );

@@ -39,3 +39,20 @@
     margin-top: emCal(16, 50);
   }
 }
+
+#map {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  z-index: 99;
+  height: 500px;
+  width: 100%;
+}
+
+#map iframe {
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}

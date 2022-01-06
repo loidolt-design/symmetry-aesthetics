@@ -24,7 +24,6 @@ export default function MenuFive({ container }) {
               }}
               action="#"
               color="dark"
-              className="-round"
               height={50 / 16 + "em"}
               width={50 / 16 + "em"}
               content={<i className="fas fa-bars"></i>}

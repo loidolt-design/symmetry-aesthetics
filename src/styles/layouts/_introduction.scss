@@ -25,6 +25,7 @@
       img {
         position: absolute;
         z-index: 1;
+        border-radius: 20px;
         &:first-child {
           top: 0;
           left: 0;
@@ -119,7 +120,7 @@
     }
   }
   &__content {
-    background-color: #f7f5f4;
+    background-color: $color-primary-light;
     padding: emCal(16, 70) 0;
     @include mq(xl) {
       padding-top: 30%;
@@ -207,6 +208,7 @@
         position: absolute;
         img {
           @include imgCenter($type: contain);
+          border-radius: 20px;
         }
         &:first-child {
           top: 0;

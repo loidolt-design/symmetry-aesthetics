@@ -94,11 +94,7 @@
       }
       &.-info {
         p {
-          @include typo(
-            $fsz: emCal(16, 14),
-            $lh: emCal(14, 24),
-            $color: setShadeColor(medium)
-          );
+          @include typo($fsz: emCal(16, 14), $lh: emCal(14, 24), $color: setShadeColor(medium));
           span {
             color: setShadeColor(dark);
           }
@@ -150,11 +146,7 @@
       }
       &.-payment {
         p {
-          @include typo(
-            $fsz: emCal(16, 14),
-            $lh: emCal(14, 24),
-            $color: setShadeColor(medium)
-          );
+          @include typo($fsz: emCal(16, 14), $lh: emCal(14, 24), $color: setShadeColor(medium));
           margin-bottom: emCal(14, 30);
         }
         .payment-methods {
@@ -166,14 +158,14 @@
     }
   }
   &__footer {
-    background-color: #f7f5f4;
+    background-color: $color-primary-dark;
     padding: 1em 0;
     &__wrapper {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       p {
-        @include typo($fsz: emCal(16, 14), $color: setShadeColor(medium));
+        @include typo($fsz: emCal(16, 14), $color: setShadeColor(light));
         @include mq(md) {
           margin-bottom: emCal(14, 15);
         }
@@ -183,7 +175,7 @@
         li {
           display: inline-block;
           a {
-            @include link($fsz: emCal(16, 14), $color: setShadeColor(medium));
+            @include link($fsz: emCal(16, 14), $color: setShadeColor(light));
           }
           &::after {
             content: "|";
@@ -208,6 +200,7 @@
     repeat: no-repeat;
     position: bottom;
   }
+  background-color: $color-primary;
   &__content {
     text-align: center;
     &__logo {
@@ -233,11 +226,13 @@
         input {
           @include input($width: auto, $height: emCal(13, 45));
           flex-grow: 1;
+          border-radius: 10px 0px 0px 10px;
         }
         button {
           @extend .btn, .-red;
           padding: 0 emCal(13, 20);
           height: emCal(13, 45);
+          border-radius: 0px 10px 10px 0px;
         }
         .input-validator {
           width: 100%;

@@ -91,7 +91,7 @@ export default function CTAOne() {
                     <span className="input-error">Please choose a date</span>
                   )}
                 </div>
-                <button className="btn -light-red">Appoitment</button>
+                <button className="btn -light-red">Appointment</button>
               </form>
             </div>
           </div>

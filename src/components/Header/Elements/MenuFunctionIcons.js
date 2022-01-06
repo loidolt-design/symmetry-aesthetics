@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import classNames from "classnames";
 
 import SearchBox from "./SearchBox";
-import CartItemsSidebar from "./CartItemsSidebar";
 import MobileNavSidebar from "./MobileNavSidebar";
 
 export default function MenuFunctionIcons(props) {
@@ -39,8 +38,6 @@ export default function MenuFunctionIcons(props) {
       </div>
       {/* Search input */}
       <SearchBox showSearch={showSearch} setShowSearch={setShowSearch} />
-      {/* Cart sidebar */}
-      <CartItemsSidebar showCart={showCart} setShowCart={setShowCart} />
       {/* Mobile navigation sidebar */}
       <MobileNavSidebar
         showMobileNav={showMobileNav}

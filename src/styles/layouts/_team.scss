@@ -2,8 +2,9 @@
   padding: emCal(16, 35);
   box-shadow: 0px 2px 10px 0 rgba(223, 223, 224, 0.5);
   transition: $transition;
+  border-radius: 20px;
   &:hover {
-    box-shadow: 0px 6px 15px 0 rgba(223, 223, 224, 0.7);
+    box-shadow: 0px 6px 15px 0 rgba(223, 223, 224, 0.7);border-radius: 20px;
     .team-card__avatar {
       img {
         transform: scale(0.9);

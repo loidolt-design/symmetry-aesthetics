@@ -1,5 +1,5 @@
 .testimonial {
-  background-color: #f7f5f4;
+  background-color: $color-primary-light;
   padding: remCal(100) 0;
   margin-bottom: remCal(100);
   .slide-nav {
@@ -13,6 +13,7 @@
       img {
         @include imgCenter;
         transition: $transition;
+        border-radius: 10px;
       }
       &:hover {
         img {
@@ -44,7 +45,7 @@
           font-size: emCal(16, 15);
           height: emCal(15, 50);
           width: emCal(15, 50);
-          background-color: setColor(red);
+          background-color: $color-contrast;
           border-radius: 999px;
           text-align: center;
           line-height: emCal(15, 50);

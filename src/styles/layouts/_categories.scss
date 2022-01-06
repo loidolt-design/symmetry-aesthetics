@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: setColor(red);
+    background-color: $color-primary-dark;
     padding: emCal(16, 50) 0;
     position: relative;
     @include link($fsz: emCal(16, 15), $fw: 600, $color: #fff);
@@ -86,6 +86,7 @@
     }
     &:hover {
       // background-color: #fff;
+      color: $color-primary-dark;
       &::after {
         top: 0;
       }
@@ -94,11 +95,7 @@
       }
     }
     img {
-      @include imgCenter(
-        $height: emCal(16, 50),
-        $width: emCal(16, 50),
-        $type: contain
-      );
+      @include imgCenter($height: emCal(16, 50), $width: emCal(16, 50), $type: contain);
       margin-right: emCal(16, 25);
       filter: brightness(5);
       transition: $transition;
