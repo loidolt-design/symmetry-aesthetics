@@ -1,13 +1,12 @@
-import React from "react";
 import Head from "next/head";
 
-import FooterTwo from "../Footer/FooterTwo";
 import withScrollFixed from "../../common/withScrollFixed";
-import HeaderOne from "../Header/HeaderOne";
+import FooterTwo from "../Footer/FooterTwo";
+import Header from "../Header/Header";
 
-let ScrollFixedHeader = withScrollFixed(HeaderOne);
+let ScrollFixedHeader = withScrollFixed(Header);
 
-export default function LayoutOne(props) {
+export default function Layout(props) {
   return (
     <>
       <Head>
